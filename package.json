@@ -1,0 +1,38 @@
+{
+  "name": "ai-web-factory-v3",
+  "version": "1.0.0",
+  "description": "AI Web Factory V3 — Immersive Three.js experience with custom GLSL shaders, 80K+ particle system, GSAP scroll animations, and post-processing effects",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "lint": "npx eslint src/",
+    "format": "npx prettier --write ."
+  },
+  "keywords": [
+    "threejs",
+    "webgl",
+    "glsl",
+    "shaders",
+    "particles",
+    "gsap",
+    "scroll-animations",
+    "creative-coding",
+    "3d",
+    "post-processing",
+    "bloom",
+    "chromatic-aberration"
+  ],
+  "author": "AI Web Factory",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

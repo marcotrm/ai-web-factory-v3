@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Web Factory V3 | Immersive 3D Experience</title>
+  <meta name="description" content="AI Web Factory V3 — A cutting-edge immersive 3D web experience powered by Three.js, featuring generative particle systems, custom shaders, and interactive animations." />
+  <meta property="og:title" content="AI Web Factory V3 | Immersive 3D Experience" />
+  <meta property="og:description" content="Explore generative 3D experiences crafted with Three.js, WebGL shaders, and modern front-end technologies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aiwebfactory.dev" />
+  <meta property="og:image" content="/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Web Factory V3 | Immersive 3D Experience" />
+  <meta name="twitter:description" content="Generative 3D Experiences powered by Three.js and WebGL." />
+  <meta name="twitter:image" content="/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+
+  <canvas id="webgl-canvas"></canvas>
+
+  <main id="scroll-container">
+
+    <!-- Hero Section -->
+    <div class="section section-hero" id="hero">
+      <div class="section-inner">
+        <header class="hero-header">
+          <p class="hero-eyebrow">Welcome to</p>
+          <h1 class="hero-title">AI Web Factory</h1>
+          <p class="hero-subtitle">Generative 3D Experiences</p>
+        </header>
+        <div class="scroll-indicator" aria-label="Scroll down">
+          <span class="scroll-indicator__label">Scroll</span>
+          <span class="scroll-indicator__arrow" aria-hidden="true">&#8595;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="section section-features" id="features">
+      <div class="section-inner">
+        <h2 class="section-title">Features</h2>
+        <div class="features-grid">
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">&#10024;</div>
+            <h3 class="feature-card__title">Particle Systems</h3>
+            <p class="feature-card__description">80,000+ dynamic particles driven by custom GLSL shaders, creating mesmerizing real-time visual landscapes that react to your interaction.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">&#9881;</div>
+            <h3 class="feature-card__title">WebGL Shaders</h3>
+            <p class="feature-card__description">Hand-crafted vertex and fragment shaders deliver stunning visual effects with full GPU acceleration, achieving silky-smooth 60 FPS performance.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">&#128161;</div>
+            <h3 class="feature-card__title">Scroll Driven</h3>
+            <p class="feature-card__description">Every scroll gesture orchestrates a cinematic 3D animation sequence, seamlessly blending geometry, color, and camera movement across five immersive scenes.</p>
+          </article>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Showcase Section -->
+    <div class="section section-showcase" id="showcase">
+      <div class="section-inner">
+        <h2 class="section-title">Showcase</h2>
+        <div class="showcase-content">
+          <p class="showcase-description">Experience the intersection of generative art and web technology. Each frame is computed in real time using the GPU, blending procedural noise, color theory, and physics-inspired motion to create a living, breathing digital canvas that is never the same twice.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="section section-stats" id="stats">
+      <div class="section-inner">
+        <h2 class="section-title">By The Numbers</h2>
+        <div class="stats-grid">
+
+          <div class="stat-item">
+            <span class="stat-item__value" data-target="80000" aria-label="80K+ Particles">80K+</span>
+            <span class="stat-item__label">Particles</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-item__value" data-target="60" aria-label="60 FPS">60</span>
+            <span class="stat-item__label">FPS</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-item__value" data-target="5" aria-label="5 Sections">5</span>
+            <span class="stat-item__label">Sections</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-item__value" data-target="3" aria-label="3 Shaders">3</span>
+            <span class="stat-item__label">Shaders</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section section-contact" id="contact">
+      <div class="section-inner">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <p class="contact-description">Ready to bring your vision to life? Let's build something extraordinary together.</p>
+          <a class="contact-email" href="mailto:hello@aiwebfactory.dev" aria-label="Send us an email">hello@aiwebfactory.dev</a>
+          <nav class="social-links" aria-label="Social media links">
+            <a class="social-link" href="#" rel="noopener noreferrer" aria-label="GitHub">
+              <span aria-hidden="true">&#128025;</span>
+              <span class="social-link__label">GitHub</span>
+            </a>
+            <a class="social-link" href="#" rel="noopener noreferrer" aria-label="Twitter">
+              <span aria-hidden="true">&#128038;</span>
+              <span class="social-link__label">Twitter</span>
+            </a>
+            <a class="social-link" href="#" rel="noopener noreferrer" aria-label="LinkedIn">
+              <span aria-hidden="true">&#128101;</span>
+              <span class="social-link__label">LinkedIn</span>
+            </a>
+            <a class="social-link" href="#" rel="noopener noreferrer" aria-label="Discord">
+              <span aria-hidden="true">&#127918;</span>
+              <span class="social-link__label">Discord</span>
+            </a>
+          </nav>
+        </div>
+        <footer class="site-footer">
+          <p class="site-footer__copy">&copy; 2024 AI Web Factory. Crafted with &#10084; and WebGL.</p>
+        </footer>
+      </div>
+    </div>
+
+  </main>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
